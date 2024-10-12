@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import steel.tools.init.ItemInit;
+import steel.tools.list.TagList;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,20 +18,20 @@ public class SteelToolsAndArmorItemTagProvider extends FabricTagProvider<Item> {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-//        getOrCreateTagBuilder(ItemTags.SWORDS)
-//                .add(ItemInit.Steel_Sword);
-//
-//        getOrCreateTagBuilder(ItemTags.PICKAXES)
-//                .add(ItemInit.Steel_Pickaxe);
-//
-//        getOrCreateTagBuilder(ItemTags.SHOVELS)
-//                .add(ItemInit.Steel_Shovel);
-//
-//        getOrCreateTagBuilder(ItemTags.AXES)
-//                .add(ItemInit.Steel_Axe);
-//
-//        getOrCreateTagBuilder(ItemTags.HOES)
-//                .add(ItemInit.Steel_Hoe);
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ItemInit.STEEL_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ItemInit.STEEL_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ItemInit.STEEL_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ItemInit.STEEL_AXE);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ItemInit.STEEL_HOE);
 
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
                 .add(ItemInit.STEEL_HELMET);

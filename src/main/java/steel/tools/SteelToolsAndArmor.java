@@ -27,5 +27,8 @@ public class SteelToolsAndArmor implements ModInitializer {
 		LOGGER.info("Loaded!"); //lets the user know the mod is loaded
 	}
 
-	public static Identifier id(String path) { return Identifier.of(MOD_ID, path); }
+	public static Identifier id(String path) {
+		return Identifier.of(MOD_ID, path.toLowerCase());
+	}
+
 }

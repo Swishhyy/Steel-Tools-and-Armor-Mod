@@ -1,12 +1,17 @@
-// 1.21.1	2024-10-12T11:28:57.2474416	Steel tools/Model Definitions
+// 1.21.1	2024-10-12T12:25:49.1366604	Steel tools/Model Definitions
+b3e4a2f4c0dee214d111113b1d4addc7bb896a8a assets\steel-tools-mod\models\item\steel_sword.json
+5c8157ca1edfc90b6565fe5a9530b359203df8e5 assets\steel-tools-mod\models\item\steel_chestplate.json
+a896614c924c03031fa08616a7786dbbf400d729 assets\steel-tools-mod\models\item\steel_boots.json
+b34aa865ee97224086b6330a1a15e9fc9febfda5 assets\steel-tools-mod\models\item\steel_leggings.json
+d0a4427020ef052dc9badfbd197300d60634157b assets\steel-tools-mod\models\item\steel_helmet.json
 f82e1a9d92e9f95de119920a8a34ef94de78bb8b assets\steel-tools-mod\models\item\liquid_iron.json
 621ce3e882f7f03eadc0e816538ea69329d58495 assets\steel-tools-mod\models\item\steel_block.json
 718db05161acfe5e7546508ecc9ceafeda9b762c assets\steel-tools-mod\models\item\steel_ingot.json
-5c8157ca1edfc90b6565fe5a9530b359203df8e5 assets\steel-tools-mod\models\item\steel_chestplate.json
-814cf549cc73053453a90c2ad727b78967370877 assets\steel-tools-mod\blockstates\steel_block.json
-a896614c924c03031fa08616a7786dbbf400d729 assets\steel-tools-mod\models\item\steel_boots.json
 fbb5809ab63b7901bb2665fa1e647f349d6fd974 assets\steel-tools-mod\models\item\sweet_apple.json
+814cf549cc73053453a90c2ad727b78967370877 assets\steel-tools-mod\blockstates\steel_block.json
 8548482add48806b6d283744a15d4af590f4ecb4 assets\steel-tools-mod\models\block\steel_block.json
+22ae7c2ca52bb22935a22101230eb79806a9afb3 assets\steel-tools-mod\models\item\steel_shovel.json
 fd934f8be4045a888429c9226068eee46e17b840 assets\steel-tools-mod\models\item\compacted_coal.json
-b34aa865ee97224086b6330a1a15e9fc9febfda5 assets\steel-tools-mod\models\item\steel_leggings.json
-d0a4427020ef052dc9badfbd197300d60634157b assets\steel-tools-mod\models\item\steel_helmet.json
+a0df667dd809ed63408c7add8cb9f32f42ee7b26 assets\steel-tools-mod\models\item\steel_pickaxe.json
+8e514856132432858f7791e7c9f4561103db9bb5 assets\steel-tools-mod\models\item\steel_hoe.json
+74c5bf788522c827cdf5cfc4f7fbe4d200e5bf39 assets\steel-tools-mod\models\item\steel_axe.json

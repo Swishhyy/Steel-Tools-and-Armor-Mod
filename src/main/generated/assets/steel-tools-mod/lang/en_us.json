@@ -2,11 +2,16 @@
   "block.steel-tools-mod.steel_block": "Steel Block",
   "item.steel-tools-mod.compacted_coal": "Compacted Coal",
   "item.steel-tools-mod.liquid_iron": "Liquid Iron",
+  "item.steel-tools-mod.steel_axe": "Steel Axe",
   "item.steel-tools-mod.steel_boots": "Steel Boots",
   "item.steel-tools-mod.steel_chestplate": "Steel Chestplate",
   "item.steel-tools-mod.steel_helmet": "Steel Helmet",
+  "item.steel-tools-mod.steel_hoe": "Steel Hoe",
   "item.steel-tools-mod.steel_ingot": "Steel Ingot",
   "item.steel-tools-mod.steel_leggings": "Steel Leggings",
+  "item.steel-tools-mod.steel_pickaxe": "Steel Pickaxe",
+  "item.steel-tools-mod.steel_shovel": "Steel Shovel",
+  "item.steel-tools-mod.steel_sword": "Steel Sword",
   "item.steel-tools-mod.sweet_apple": "Sweet Apple",
   "itemGroup.steel-tools-mod.steel_tools_group": "Steel Tools and Armor"
 }

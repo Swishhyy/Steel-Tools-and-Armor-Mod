@@ -28,5 +28,10 @@ public class SteelToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.STEEL_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.STEEL_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.STEEL_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.STEEL_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.STEEL_AXE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.STEEL_HOE, Models.GENERATED);
     }
 }

@@ -1,12 +1,14 @@
 package steel.tools.init;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import steel.tools.SteelToolsAndArmor;
 import steel.tools.list.FoodList;
+import steel.tools.list.enums.ToolMaterials;
+
+import javax.tools.Tool;
 
 public class ItemInit {
 
@@ -42,6 +44,26 @@ public class ItemInit {
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(34))
                     .maxCount(1)));
 
+    // Init for tools
+    public static final SwordItem STEEL_SWORD = register("steel_sword",
+            new SwordItem(ToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
+
+    public static final PickaxeItem STEEL_PICKAXE = register("steel_pickaxe",
+            new PickaxeItem(ToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
+
+    public static final AxeItem STEEL_AXE = register("steel_axe",
+            new AxeItem(ToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
+
+    public static final ShovelItem STEEL_SHOVEL = register("steel_shovel",
+            new ShovelItem(ToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
+
+    public static final HoeItem STEEL_HOE = register("steel_hoe",
+            new HoeItem(ToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
 
     // Register method
     public static <T extends Item> T register(String name, T item) {

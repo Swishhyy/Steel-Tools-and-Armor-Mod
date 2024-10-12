@@ -39,6 +39,11 @@ public class SteelToolsAndArmorENProvider extends FabricLanguageProvider {
         translationBuilder.add(ItemInit.STEEL_CHESTPLATE, "Steel Chestplate");
         translationBuilder.add(ItemInit.STEEL_LEGGINGS, "Steel Leggings");
         translationBuilder.add(ItemInit.STEEL_BOOTS, "Steel Boots");
+        translationBuilder.add(ItemInit.STEEL_SWORD, "Steel Sword");
+        translationBuilder.add(ItemInit.STEEL_AXE, "Steel Axe");
+        translationBuilder.add(ItemInit.STEEL_PICKAXE, "Steel Pickaxe");
+        translationBuilder.add(ItemInit.STEEL_SHOVEL, "Steel Shovel");
+        translationBuilder.add(ItemInit.STEEL_HOE, "Steel Hoe");
         addText(translationBuilder, ItemGroupInit.STEEL_TOOLS_TITLE, "Steel Tools and Armor");
 
     }

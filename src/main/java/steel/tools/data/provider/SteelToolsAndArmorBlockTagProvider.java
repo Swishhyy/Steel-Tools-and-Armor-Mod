@@ -2,9 +2,13 @@ package steel.tools.data.provider;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import steel.tools.init.BlockInit;
+import steel.tools.list.TagList;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,5 +24,10 @@ public class SteelToolsAndArmorBlockTagProvider extends FabricTagProvider.BlockT
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(BlockInit.STEEL_BLOCK);
+
+        getOrCreateTagBuilder(TagList.Blocks.STEEL_TAG)
+                .add(BlockInit.STEEL_BLOCK);
+
+        getOrCreateTagBuilder(TagList.Blocks.INCORRECT_FOR_STEEL_TOOL);
     }
 }
