@@ -22,7 +22,7 @@ public class SteelToolsAndArmorModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ItemInit.COMPACTED_COAL, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_INGOT, Models.GENERATED);
-        itemModelGenerator.register(ItemInit.LIQUID_IRON, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.MOLTEN_IRON, Models.GENERATED);
         itemModelGenerator.register(ItemInit.SWEET_APPLE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_HELMET, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_CHESTPLATE, Models.GENERATED);
@@ -33,5 +33,15 @@ public class SteelToolsAndArmorModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemInit.STEEL_PICKAXE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_AXE, Models.GENERATED);
         itemModelGenerator.register(ItemInit.STEEL_HOE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_SHOVEL, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_SWORD, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_AXE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_PICKAXE, Models.GENERATED);
+        itemModelGenerator.register(ItemInit.REINFORCED_STEEL_HOE, Models.GENERATED);
     }
 }

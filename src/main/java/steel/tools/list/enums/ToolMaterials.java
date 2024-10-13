@@ -15,6 +15,14 @@ public enum ToolMaterials implements ToolMaterial {
             TagList.Blocks.INCORRECT_FOR_STEEL_TOOL,
             15,
             Ingredient.ofItems(ItemInit.STEEL_INGOT)
+    ),
+    REINFORCED_STEEL(
+            6430,
+            20.0f,
+            7.5f,
+            TagList.Blocks.INCORRECT_FOR_STEEL_TOOL,
+            20,
+            Ingredient.ofItems(ItemInit.REINFORCED_STEEL_INGOT)
     );
 
     private final int durability;

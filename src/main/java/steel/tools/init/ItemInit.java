@@ -8,13 +8,12 @@ import steel.tools.SteelToolsAndArmor;
 import steel.tools.list.FoodList;
 import steel.tools.list.enums.ToolMaterials;
 
-import javax.tools.Tool;
-
 public class ItemInit {
 
     // Init for crafting items
+    public static final Item REINFORCED_STEEL_INGOT = register("reinforced_steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = register("steel_ingot", new Item(new Item.Settings()));
-    public static final Item LIQUID_IRON = register("liquid_iron", new Item(new Item.Settings()));
+    public static final Item MOLTEN_IRON = register("molten_iron", new Item(new Item.Settings()));
 
     // Init for Compacted Coal as a fuel type
     public static final Item COMPACTED_COAL = register("compacted_coal", new Item(new Item.Settings()));
@@ -44,6 +43,23 @@ public class ItemInit {
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(34))
                     .maxCount(1)));
 
+    public static final ArmorItem REINFORCED_STEEL_HELMET = register( "reinforced_steel_helmet",
+            new ArmorItem(ArmorMaterialInit.REINFORCED_STEEL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(69))
+                    .maxCount(1)));
+    public static final ArmorItem REINFORCED_STEEL_CHESTPLATE = register( "reinforced_steel_chestplate",
+            new ArmorItem(ArmorMaterialInit.REINFORCED_STEEL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(69))
+                    .maxCount(1)));
+    public static final ArmorItem REINFORCED_STEEL_LEGGINGS = register( "reinforced_steel_leggings",
+            new ArmorItem(ArmorMaterialInit.REINFORCED_STEEL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(69))
+                    .maxCount(1)));
+    public static final ArmorItem REINFORCED_STEEL_BOOTS = register( "reinforced_steel_boots",
+            new ArmorItem(ArmorMaterialInit.REINFORCED_STEEL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(69))
+                    .maxCount(1)));
+
     // Init for tools
     public static final SwordItem STEEL_SWORD = register("steel_sword",
             new SwordItem(ToolMaterials.STEEL, new Item.Settings()
@@ -64,6 +80,28 @@ public class ItemInit {
     public static final HoeItem STEEL_HOE = register("steel_hoe",
             new HoeItem(ToolMaterials.STEEL, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.STEEL, 3,-2.4f ))));
+
+
+
+    public static final SwordItem REINFORCED_STEEL_SWORD = register("reinforced_steel_sword",
+            new SwordItem(ToolMaterials.REINFORCED_STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REINFORCED_STEEL, 6,-1.4f ))));
+
+    public static final PickaxeItem REINFORCED_STEEL_PICKAXE = register("reinforced_steel_pickaxe",
+            new PickaxeItem(ToolMaterials.REINFORCED_STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REINFORCED_STEEL, 6,-1.4f ))));
+
+    public static final AxeItem REINFORCED_STEEL_AXE = register("reinforced_steel_axe",
+            new AxeItem(ToolMaterials.REINFORCED_STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REINFORCED_STEEL, 6,-1.4f ))));
+
+    public static final ShovelItem REINFORCED_STEEL_SHOVEL = register("reinforced_steel_shovel",
+            new ShovelItem(ToolMaterials.REINFORCED_STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REINFORCED_STEEL, 6,-1.4f ))));
+
+    public static final HoeItem REINFORCED_STEEL_HOE = register("reinforced_steel_hoe",
+            new HoeItem(ToolMaterials.REINFORCED_STEEL, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterials.REINFORCED_STEEL, 6,-1.4f ))));
 
     // Register method
     public static <T extends Item> T register(String name, T item) {

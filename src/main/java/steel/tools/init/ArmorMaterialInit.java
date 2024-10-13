@@ -29,6 +29,20 @@ public class ArmorMaterialInit {
             0.1F,
             false);
 
+    public static final RegistryEntry<ArmorMaterial> REINFORCED_STEEL = registerMaterial("reinforced_steel"
+            , Map.of(
+                    ArmorItem.Type.HELMET, 3,
+                    ArmorItem.Type.CHESTPLATE, 8,
+                    ArmorItem.Type.LEGGINGS, 6,
+                    ArmorItem.Type.BOOTS, 3
+            ),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
+            () -> Ingredient.ofItems(ItemInit.REINFORCED_STEEL_INGOT),
+            4.0F,
+            0.3F,
+            false);
+
 
     public static RegistryEntry<ArmorMaterial> registerMaterial(String id, Map<ArmorItem.Type, Integer> defensePoints,
                                                                 int enchantability, RegistryEntry<SoundEvent> equipSound,

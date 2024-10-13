@@ -18,6 +18,12 @@ public class BlockInit {
                     .requiresTool()            // Requires a tool to be mined
                     .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
 
+    public static final Block REINFORCED_STEEL_BLOCK = registerWithItem("reinforced_steel_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(20.0f, 1000.0f)  // Hardness of 10, Resistance of 600
+                    .requiresTool()            // Requires a tool to be mined
+                    .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
+
 
     // Register the block itself
     public static <T extends Block> T register(String name, T block) {

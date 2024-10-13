@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_c:rods/wooden": {
+    "has_netherite_scrap": {
       "conditions": {
         "items": [
           {
-            "items": "#c:rods/wooden"
+            "items": "minecraft:netherite_scrap"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "steel-tools-mod:steel_shovel"
+        "recipe": "minecraft:netherite_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_steel_ingot",
-      "has_c:rods/wooden"
+      "has_netherite_scrap",
+      "has_steel_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "steel-tools-mod:steel_shovel"
+      "minecraft:netherite_ingot"
     ]
   }
 }

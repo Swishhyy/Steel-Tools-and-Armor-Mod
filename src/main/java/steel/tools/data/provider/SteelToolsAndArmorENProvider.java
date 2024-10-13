@@ -32,7 +32,7 @@ public class SteelToolsAndArmorENProvider extends FabricLanguageProvider {
         //adds translation for items
         translationBuilder.add(ItemInit.COMPACTED_COAL, "Compacted Coal");
         translationBuilder.add(ItemInit.STEEL_INGOT, "Steel Ingot");
-        translationBuilder.add(ItemInit.LIQUID_IRON, "Liquid Iron");
+        translationBuilder.add(ItemInit.MOLTEN_IRON, "Molten Iron");
         translationBuilder.add(ItemInit.SWEET_APPLE, "Sweet Apple");
         translationBuilder.add(BlockInit.STEEL_BLOCK, "Steel Block");
         translationBuilder.add(ItemInit.STEEL_HELMET, "Steel Helmet");
@@ -44,7 +44,16 @@ public class SteelToolsAndArmorENProvider extends FabricLanguageProvider {
         translationBuilder.add(ItemInit.STEEL_PICKAXE, "Steel Pickaxe");
         translationBuilder.add(ItemInit.STEEL_SHOVEL, "Steel Shovel");
         translationBuilder.add(ItemInit.STEEL_HOE, "Steel Hoe");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_INGOT, "Reinforced Steel Ingot");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_HELMET, "Reinforced Steel Helmet");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_CHESTPLATE, "Reinforced Steel Chestplate");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_LEGGINGS, "Reinforced Steel Leggings");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_BOOTS, "Reinforced Steel Boots");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_PICKAXE, "Reinforced Steel Pickaxe");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_AXE, "Reinforced Steel Axe");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_SHOVEL, "Reinforced Steel Shovel");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_SWORD, "Reinforced Steel Sword");
+        translationBuilder.add(ItemInit.REINFORCED_STEEL_HOE, "Reinforced Steel Hoe");
         addText(translationBuilder, ItemGroupInit.STEEL_TOOLS_TITLE, "Steel Tools and Armor");
-
     }
 }

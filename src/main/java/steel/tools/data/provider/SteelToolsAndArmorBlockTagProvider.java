@@ -29,5 +29,17 @@ public class SteelToolsAndArmorBlockTagProvider extends FabricTagProvider.BlockT
                 .add(BlockInit.STEEL_BLOCK);
 
         getOrCreateTagBuilder(TagList.Blocks.INCORRECT_FOR_STEEL_TOOL);
+
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(BlockInit.STEEL_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(BlockInit.STEEL_BLOCK);
+
+        getOrCreateTagBuilder(TagList.Blocks.STEEL_TAG)
+                .add(BlockInit.STEEL_BLOCK);
+
+        getOrCreateTagBuilder(TagList.Blocks.INCORRECT_FOR_STEEL_TOOL);
     }
 }

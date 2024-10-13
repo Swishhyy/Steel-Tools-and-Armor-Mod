@@ -44,5 +44,34 @@ public class SteelToolsAndArmorItemTagProvider extends FabricTagProvider<Item> {
 
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
                 .add(ItemInit.STEEL_BOOTS);
+
+
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ItemInit.REINFORCED_STEEL_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ItemInit.REINFORCED_STEEL_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ItemInit.REINFORCED_STEEL_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ItemInit.REINFORCED_STEEL_AXE);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ItemInit.REINFORCED_STEEL_HOE);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ItemInit.REINFORCED_STEEL_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ItemInit.REINFORCED_STEEL_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ItemInit.REINFORCED_STEEL_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ItemInit.REINFORCED_STEEL_BOOTS);
     }
 }

@@ -1,13 +1,34 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "building",
+  "category": "misc",
   "ingredients": [
     {
-      "item": "steel-tools-mod:steel_block"
+      "item": "steel-tools-mod:molten_iron"
+    },
+    {
+      "item": "steel-tools-mod:molten_iron"
+    },
+    {
+      "item": "steel-tools-mod:molten_iron"
+    },
+    {
+      "item": "steel-tools-mod:molten_iron"
+    },
+    {
+      "item": "steel-tools-mod:compacted_coal"
+    },
+    {
+      "item": "steel-tools-mod:compacted_coal"
+    },
+    {
+      "item": "steel-tools-mod:compacted_coal"
+    },
+    {
+      "item": "steel-tools-mod:compacted_coal"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 1,
     "id": "steel-tools-mod:steel_ingot"
   }
 }
