@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-12T23:37:21.0768288	Steel tools/Tags for minecraft:block
-c291a8f8d2add426d8fcca5632a17facdc415a9f data\steel-tools-mod\tags\block\steel.json
+// 1.21.1	2024-10-13T16:44:06.8544817	Steel tools/Tags for minecraft:block
+0f35ad5de463f8afee1712f85da1b1f46b9987be data\steel-tools-mod\tags\block\steel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\steel-tools-mod\tags\block\incorrect_for_steel_tool.json
-c291a8f8d2add426d8fcca5632a17facdc415a9f data\minecraft\tags\block\mineable\pickaxe.json
-c291a8f8d2add426d8fcca5632a17facdc415a9f data\minecraft\tags\block\needs_diamond_tool.json
+0f35ad5de463f8afee1712f85da1b1f46b9987be data\minecraft\tags\block\mineable\pickaxe.json
+0f35ad5de463f8afee1712f85da1b1f46b9987be data\minecraft\tags\block\needs_diamond_tool.json

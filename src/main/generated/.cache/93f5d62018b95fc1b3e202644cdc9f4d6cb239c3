@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-12T23:37:21.0790932	Steel tools/Recipes
+// 1.21.1	2024-10-13T16:44:06.8562182	Steel tools/Recipes
 6ee32d544afb66ae82c1e9a0865ad924240c941a data\steel-tools-mod\recipe\steel_ingot_from_molten.json
 beb1d4409b18a8860b668a067cda9bc309429658 data\steel-tools-mod\advancement\recipes\building_blocks\steel_block.json
 a93338c2e8637732cbcb0c95afb686bf43f24b13 data\steel-tools-mod\recipe\steel_ingot_from_block.json
@@ -19,14 +19,15 @@ e11b153d2c3f2ba1af950ed7d491e2e6d7fca21a data\steel-tools-mod\recipe\reinforced_
 30d2f67df31fbf03747ccba4226b544495cd4fb5 data\steel-tools-mod\advancement\recipes\combat\steel_helmet.json
 daed11dbed585f9393b7ea9f17f12a2cdee58247 data\steel-tools-mod\advancement\recipes\combat\steel_boots.json
 8d5f5187491c36af2595ce0ea7c8a7b353ef5a8a data\steel-tools-mod\recipe\steel_axe.json
+ad6acd88fcd3a2f20159a6b63fbc4838966d950d data\steel-tools-mod\recipe\super_compacted_coal.json
 629c5099615dc4f9d452dc36a8c3c067d63d0264 data\steel-tools-mod\recipe\steel_shovel.json
 50ee78230d6aa03ee7f8401c9e214f08abd9bf24 data\steel-tools-mod\recipe\reinforced_steel_helmet.json
 44c51dbae3249d4f582da57a913a4e8ffcb20d6c data\steel-tools-mod\recipe\reinforced_steel_leggings.json
 d985d71e80aac9ad12eaa4c713617a58528d61d4 data\steel-tools-mod\advancement\recipes\building_blocks\reinforced_steel_ingot_recipe.json
+349c855e1cc733ffdd121ca38453d8e29feefa55 data\steel-tools-mod\advancement\recipes\misc\super_compacted_coal.json
 9c3561fea4e735c5fc94727413281742434ac245 data\steel-tools-mod\advancement\recipes\misc\compacted_coal_from_coal.json
-ea771fea4ae3f06dae5995b5e70f41093361017c data\steel-tools-mod\advancement\recipes\misc\netherite_ingot.json
 06960292b94b47ae964a60e7993d7e6f85e86f83 data\steel-tools-mod\recipe\reinforced_steel_boots.json
-0e12fb840327ff19ee9416101b9353902bc8cfa1 data\steel-tools-mod\recipe\compacted_coal_from_coal.json
+58bd317b7aba73ced617929e236593d129180664 data\steel-tools-mod\recipe\compacted_coal_from_coal.json
 c4661f28ad1c2cb52882253163097ef71060735e data\steel-tools-mod\advancement\recipes\tools\reinforced_steel_axe.json
 0d0c3174c22ebd1ed809700d73314c89058adf2a data\steel-tools-mod\recipe\steel_boots.json
 fcd9be6c0cd7666bcb1d05cff80882a3e0411eeb data\steel-tools-mod\recipe\reinforced_steel_hoe.json
@@ -41,7 +42,6 @@ efcb8fa5c37c21c7de253f8455607c80538116d3 data\steel-tools-mod\advancement\recipe
 9d8b2a1cd74d55cf6ddaf58cfea70de499fb131d data\steel-tools-mod\advancement\recipes\tools\steel_pickaxe.json
 14434d655c25b1034d3ec7a061591cce25581407 data\steel-tools-mod\advancement\recipes\combat\reinforced_steel_boots.json
 f0136b43858441aea27ef06daf7679468fe26c67 data\steel-tools-mod\recipe\steel_leggings.json
-65aded761f00fec4c6d9e626a3e738ec90a0755a data\steel-tools-mod\recipe\netherite_ingot.json
 9d3d6e0e491717010e26461a04ac38465c961284 data\steel-tools-mod\recipe\reinforced_steel_shovel.json
 78d0179eba439ad61e297b7eed7656e13d8a8ac5 data\steel-tools-mod\recipe\steel_block.json
 7aa5ef04173cb9bc7c81d0c959922d894271510d data\steel-tools-mod\advancement\recipes\combat\reinforced_steel_leggings.json

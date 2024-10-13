@@ -14,6 +14,5 @@ public class SteelToolsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(SteelToolsAndArmorBlockTagProvider::new);
 		pack.addProvider(SteelToolsAndArmorRecipeProvider::new);
 		pack.addProvider(SteelToolsAndArmorItemTagProvider::new);
-
 	}
 }

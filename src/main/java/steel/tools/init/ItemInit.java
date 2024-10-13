@@ -14,11 +14,19 @@ public class ItemInit {
     public static final Item REINFORCED_STEEL_INGOT = register("reinforced_steel_ingot", new Item(new Item.Settings()));
     public static final Item STEEL_INGOT = register("steel_ingot", new Item(new Item.Settings()));
     public static final Item MOLTEN_IRON = register("molten_iron", new Item(new Item.Settings()));
+    public static final Item MOLTEN_STEEL = register("molten_steel", new Item(new Item.Settings()));
+    public static final Item MOLTEN_NETHERITE = register("molten_netherite", new Item(new Item.Settings()));
+
 
     // Init for Compacted Coal as a fuel type
     public static final Item COMPACTED_COAL = register("compacted_coal", new Item(new Item.Settings()));
     static {  // Static block to register fuel immediately after initialization
-        FuelRegistry.INSTANCE.add(COMPACTED_COAL, 3200); // 3200 ticks = twice the burn time of coal
+        FuelRegistry.INSTANCE.add(COMPACTED_COAL, 9600); // 3200 ticks = twice the burn time of coal
+    }
+
+    public static final Item SUPER_COMPACTED_COAL = register("super_compacted_coal", new Item(new Item.Settings()));
+    static {  // Static block to register fuel immediately after initialization
+        FuelRegistry.INSTANCE.add(SUPER_COMPACTED_COAL, 19200); // Twice as much as compacted coal
     }
 
     // Init for food items

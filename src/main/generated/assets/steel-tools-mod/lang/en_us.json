@@ -1,6 +1,8 @@
 {
+  "block.steel-tools-mod.compacted_coal_block": "Compacted Coal Block",
   "block.steel-tools-mod.reinforced_steel_block": "Reinforced Steel Block",
   "block.steel-tools-mod.steel_block": "Steel Block",
+  "block.steel-tools-mod.super_compacted_coal_block": "Super Compacted Coal Block",
   "item.steel-tools-mod.compacted_coal": "Compacted Coal",
   "item.steel-tools-mod.molten_iron": "Molten Iron",
   "item.steel-tools-mod.reinforced_steel_axe": "Reinforced Steel Axe",

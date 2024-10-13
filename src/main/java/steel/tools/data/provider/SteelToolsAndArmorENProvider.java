@@ -55,6 +55,8 @@ public class SteelToolsAndArmorENProvider extends FabricLanguageProvider {
         translationBuilder.add(ItemInit.REINFORCED_STEEL_SWORD, "Reinforced Steel Sword");
         translationBuilder.add(ItemInit.REINFORCED_STEEL_HOE, "Reinforced Steel Hoe");
         translationBuilder.add(BlockInit.REINFORCED_STEEL_BLOCK, "Reinforced Steel Block");
+        translationBuilder.add(BlockInit.COMPACTED_COAL_BLOCK, "Compacted Coal Block");
+        translationBuilder.add(BlockInit.SUPER_COMPACTED_COAL_BLOCK, "Super Compacted Coal Block");
         addText(translationBuilder, ItemGroupInit.STEEL_TOOLS_TITLE, "Steel Tools and Armor");
     }
 }

@@ -1,5 +1,6 @@
 package steel.tools.init;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -25,6 +26,22 @@ public class BlockInit {
                     .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
 
 
+    public static final Block COMPACTED_COAL_BLOCK = registerWithItem("compacted_coal_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(5.0f, 3.0f)
+                    .requiresTool()            // Requires a tool to be mined
+                    .sounds(BlockSoundGroup.STONE)));
+    static {  // Static block to register fuel immediately after initialization
+        FuelRegistry.INSTANCE.add(COMPACTED_COAL_BLOCK, 28800); //Compacted Coal x 3 = compacted coal block burn time
+    }
+    public static final Block SUPER_COMPACTED_COAL_BLOCK = registerWithItem("super_compacted_coal_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(7.0f, 6.0f)
+                    .requiresTool()            // Requires a tool to be mined
+                    .sounds(BlockSoundGroup.STONE)));
+    static {  // Static block to register fuel immediately after initialization
+        FuelRegistry.INSTANCE.add(SUPER_COMPACTED_COAL_BLOCK, 57600); //super Compacted Coal x 3 = super compacted coal block burn time
+    }
     // Register the block itself
     public static <T extends Block> T register(String name, T block) {
         return Registry.register(Registries.BLOCK, SteelToolsAndArmor.id(name), block);

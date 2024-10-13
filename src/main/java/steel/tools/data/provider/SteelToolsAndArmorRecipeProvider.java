@@ -5,15 +5,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import steel.tools.init.BlockInit;
@@ -37,13 +34,25 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
 
         // Shapeless Recipe: 5 Compacted Coal from 1 Coal
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.COMPACTED_COAL)
-                .input(Items.COAL)  // 1st piece of coal
-                .input(Items.COAL)  // 2nd piece of coal
-                .input(Items.COAL)  // 3rd piece of coal
-                .input(Items.COAL)  // 4th piece of coal
-                .input(Items.COAL)  // 5th piece of coal
-                .criterion("has_coal", conditionsFromItem(Items.COAL))  // Criterion for Coal
+                .input(Items.COAL)
+                .input(Items.COAL)
+                .input(Items.COAL)
+                .input(Items.COAL)
+                .input(Items.COAL)
+                .input(Items.COAL)
+                .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))  // Criterion for Coal
                 .offerTo(exporter, Identifier.of("steel-tools-mod", "compacted_coal_from_coal"));  // Add custom identifier
+
+        // Shapeless Recipe: 5 Compacted Coal from 1 Coal
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.SUPER_COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .input(ItemInit.COMPACTED_COAL)
+                .criterion(hasItem(ItemInit.COMPACTED_COAL), conditionsFromItem(ItemInit.COMPACTED_COAL))
+                .offerTo(exporter);
 
         //Steel Recipe
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.STEEL_INGOT)
@@ -59,20 +68,6 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ItemInit.COMPACTED_COAL), conditionsFromItem(ItemInit.COMPACTED_COAL))
                 .offerTo(exporter, Identifier.of("steel-tools-mod", "steel_ingot_from_molten"));
 
-        //New Netherite Recipe
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_INGOT)
-                .input(Items.NETHERITE_SCRAP)
-                .input(Items.NETHERITE_SCRAP)
-                .input(Items.NETHERITE_SCRAP)
-                .input(Items.NETHERITE_SCRAP)
-                .input(ItemInit.STEEL_INGOT)
-                .input(ItemInit.STEEL_INGOT)
-                .input(ItemInit.STEEL_INGOT)
-                .input(ItemInit.STEEL_INGOT)
-                .input(ItemInit.STEEL_INGOT)
-                .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
-                .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .offerTo(exporter, new net.minecraft.util.Identifier("minecraft", "netherite_ingot"));
 
         //Reinforced Steel Ingot Recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInit.REINFORCED_STEEL_INGOT)
@@ -143,7 +138,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("S")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.STEEL_PICKAXE)
@@ -153,7 +148,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.STEEL_AXE)
@@ -163,7 +158,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("XS ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.STEEL_SHOVEL)
@@ -173,7 +168,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("S")
                 .pattern("S")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.STEEL_HOE)
@@ -183,7 +178,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
 
@@ -246,7 +241,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("X")
                 .pattern("S")
                 .criterion(hasItem(ItemInit.REINFORCED_STEEL_INGOT), conditionsFromItem(ItemInit.REINFORCED_STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.REINFORCED_STEEL_PICKAXE)
@@ -256,7 +251,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.REINFORCED_STEEL_INGOT), conditionsFromItem(ItemInit.REINFORCED_STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.REINFORCED_STEEL_AXE)
@@ -266,7 +261,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("XS ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.REINFORCED_STEEL_INGOT), conditionsFromItem(ItemInit.REINFORCED_STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.REINFORCED_STEEL_SHOVEL)
@@ -276,7 +271,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("S")
                 .pattern("S")
                 .criterion(hasItem(ItemInit.REINFORCED_STEEL_INGOT), conditionsFromItem(ItemInit.REINFORCED_STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemInit.REINFORCED_STEEL_HOE)
@@ -286,11 +281,11 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .criterion(hasItem(ItemInit.REINFORCED_STEEL_INGOT), conditionsFromItem(ItemInit.REINFORCED_STEEL_INGOT))
-                .criterion(hasTag(ConventionalItemTags.WOODEN_RODS), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
+                .criterion(hasTag(), conditionsFromTag(ConventionalItemTags.WOODEN_RODS))
                 .offerTo(exporter);
     }
 
-    private static String hasTag(TagKey<Item> tag) {
-        return "has_" + tag.id().toString();
+    private static String hasTag() {
+        return "has_" + ConventionalItemTags.WOODEN_RODS.id().toString();
     }
 }

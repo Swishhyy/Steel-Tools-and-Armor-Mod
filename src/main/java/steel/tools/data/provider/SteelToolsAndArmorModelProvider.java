@@ -16,6 +16,9 @@ public class SteelToolsAndArmorModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(BlockInit.STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.REINFORCED_STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.COMPACTED_COAL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInit.SUPER_COMPACTED_COAL_BLOCK);
     }
 
     @Override

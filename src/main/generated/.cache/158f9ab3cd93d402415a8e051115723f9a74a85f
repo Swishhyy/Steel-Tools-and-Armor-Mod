@@ -1,23 +1,32 @@
-// 1.21.1	2024-10-12T23:37:21.0778304	Steel tools/Model Definitions
+// 1.21.1	2024-10-13T16:44:06.8552175	Steel tools/Model Definitions
 82d0f81ec25ad8dfeaf514cb8f1ff655bda54a8c assets\steel-tools-mod\models\item\reinforced_steel_ingot.json
 5c8157ca1edfc90b6565fe5a9530b359203df8e5 assets\steel-tools-mod\models\item\steel_chestplate.json
 35b9247d2e62196cd79bf6c9788309ab6eeea1cc assets\steel-tools-mod\models\item\reinforced_steel_axe.json
 0591b0544afcb926924bc539266567d2f0b4855f assets\steel-tools-mod\models\item\reinforced_steel_hoe.json
 a896614c924c03031fa08616a7786dbbf400d729 assets\steel-tools-mod\models\item\steel_boots.json
+eb28e3e8508848bf03f98179b4436f4123234088 assets\steel-tools-mod\models\block\reinforced_steel_block.json
 d0a4427020ef052dc9badfbd197300d60634157b assets\steel-tools-mod\models\item\steel_helmet.json
+c668a39f660c0ecc023d5b68c7b7acf902942227 assets\steel-tools-mod\blockstates\compacted_coal_block.json
+ee9f8aa64e0d2444f56d9f863fe8534caa9f863d assets\steel-tools-mod\models\block\compacted_coal_block.json
+156dec24f22c7a922d5908537317c05e5febfdaf assets\steel-tools-mod\models\item\super_compacted_coal_block.json
 fd753bf5fcc430d54a5db1a356b5e327182c810f assets\steel-tools-mod\models\item\reinforced_steel_boots.json
 621ce3e882f7f03eadc0e816538ea69329d58495 assets\steel-tools-mod\models\item\steel_block.json
 242cc9811d74256fb440f6d5f570ac420116c54f assets\steel-tools-mod\models\item\reinforced_steel_leggings.json
 718db05161acfe5e7546508ecc9ceafeda9b762c assets\steel-tools-mod\models\item\steel_ingot.json
 fbb5809ab63b7901bb2665fa1e647f349d6fd974 assets\steel-tools-mod\models\item\sweet_apple.json
-8548482add48806b6d283744a15d4af590f4ecb4 assets\steel-tools-mod\models\block\steel_block.json
 22ae7c2ca52bb22935a22101230eb79806a9afb3 assets\steel-tools-mod\models\item\steel_shovel.json
+8548482add48806b6d283744a15d4af590f4ecb4 assets\steel-tools-mod\models\block\steel_block.json
 74c5bf788522c827cdf5cfc4f7fbe4d200e5bf39 assets\steel-tools-mod\models\item\steel_axe.json
 2feb9749d3f90aedbc537d64a87679ea0779ec09 assets\steel-tools-mod\models\item\reinforced_steel_shovel.json
+791daab205f8197865f592e1c997df22225b1ffa assets\steel-tools-mod\blockstates\super_compacted_coal_block.json
 b3e4a2f4c0dee214d111113b1d4addc7bb896a8a assets\steel-tools-mod\models\item\steel_sword.json
+92d6e17703ef65ff805a31ad2d65afe460ca9e35 assets\steel-tools-mod\models\item\reinforced_steel_block.json
 7ace157d544b1419b23f45139420b89ecccbb010 assets\steel-tools-mod\models\item\reinforced_steel_helmet.json
 da5b3bb624986ac16cc6a3869280a2bdcaaab027 assets\steel-tools-mod\models\item\reinforced_steel_pickaxe.json
+e650c5a593d2a961ce67848a7a452c656432b345 assets\steel-tools-mod\models\block\super_compacted_coal_block.json
 b34aa865ee97224086b6330a1a15e9fc9febfda5 assets\steel-tools-mod\models\item\steel_leggings.json
+946fd217837c5df94547eb6f530847baeb559f08 assets\steel-tools-mod\blockstates\reinforced_steel_block.json
+028624f91b0343e115faf3780404671361a0949c assets\steel-tools-mod\models\item\compacted_coal_block.json
 15914507befd7cc6460815fef09f691cf7e45254 assets\steel-tools-mod\models\item\reinforced_steel_chestplate.json
 814cf549cc73053453a90c2ad727b78967370877 assets\steel-tools-mod\blockstates\steel_block.json
 f1af729c7a422e91f873c652481b83ba561fff6a assets\steel-tools-mod\models\item\reinforced_steel_sword.json

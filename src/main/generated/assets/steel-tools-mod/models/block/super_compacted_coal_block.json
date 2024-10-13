@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "steel-tools-mod:block/super_compacted_coal_block"
+  }
+}
