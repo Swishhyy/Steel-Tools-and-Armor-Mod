@@ -36,11 +36,14 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
 
         // Shapeless Recipe: 5 Compacted Coal from 1 Coal
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.COMPACTED_COAL, 5)
-                .input(Items.COAL)  // Use vanilla Minecraft coal as input
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.COMPACTED_COAL)
+                .input(Items.COAL)  // 1st piece of coal
+                .input(Items.COAL)  // 2nd piece of coal
+                .input(Items.COAL)  // 3rd piece of coal
+                .input(Items.COAL)  // 4th piece of coal
+                .input(Items.COAL)  // 5th piece of coal
                 .criterion("has_coal", conditionsFromItem(Items.COAL))  // Criterion for Coal
-                .criterion("has_iron_ingot", conditionsFromItem(Items.IRON_INGOT))  // Criterion for Iron Ingot
-                .offerTo(exporter);
+                .offerTo(exporter, Identifier.of("steel-tools-mod", "compacted_coal_from_coal"));  // Add custom identifier
 
         //Steel Recipe
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemInit.STEEL_INGOT)
@@ -54,7 +57,8 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .input(ItemInit.COMPACTED_COAL)
                 .criterion(hasItem(ItemInit.MOLTEN_IRON), conditionsFromItem(ItemInit.MOLTEN_IRON))
                 .criterion(hasItem(ItemInit.COMPACTED_COAL), conditionsFromItem(ItemInit.COMPACTED_COAL))
-                .offerTo(exporter);
+                .offerTo(exporter, Identifier.of("steel-tools-mod", "steel_ingot_from_molten"));
+
         //New Netherite Recipe
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHERITE_INGOT)
                 .input(Items.NETHERITE_SCRAP)
@@ -68,8 +72,9 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .input(ItemInit.STEEL_INGOT)
                 .criterion(hasItem(Items.NETHERITE_SCRAP), conditionsFromItem(Items.NETHERITE_SCRAP))
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
-                .offerTo(exporter, Identifier.of("minecraft", "netherite_ingot"));
+                .offerTo(exporter, new net.minecraft.util.Identifier("minecraft", "netherite_ingot"));
 
+        //Reinforced Steel Ingot Recipe
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInit.REINFORCED_STEEL_INGOT)
                 .input('X', ItemInit.STEEL_INGOT)
                 .input('S', Items.NETHERITE_INGOT)
@@ -78,15 +83,15 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
                 .pattern("XXX")
                 .criterion(hasItem(ItemInit.STEEL_INGOT), conditionsFromItem(ItemInit.STEEL_INGOT))
                 .criterion(hasItem(Items.NETHERITE_INGOT), conditionsFromItem(Items.NETHERITE_INGOT))
-                .offerTo(exporter);
-
+                .offerTo(exporter, Identifier.of("steel-tools-mod", "reinforced_steel_ingot_recipe"));  // Use Identifier.of here
 
 
         // Shapeless Recipe: 1 Steel Block -> 9 Steel Ingots
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInit.STEEL_INGOT, 9)
                 .input(BlockInit.STEEL_BLOCK)
                 .criterion(hasItem(BlockInit.STEEL_BLOCK), conditionsFromItem(BlockInit.STEEL_BLOCK))
-                .offerTo(exporter);
+                .offerTo(exporter, Identifier.of("steel-tools-mod", "steel_ingot_from_block"));
+
 
 // Shaped Recipe: 9 Steel Ingots -> 1 Steel Block
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInit.STEEL_BLOCK)
@@ -189,7 +194,7 @@ public class SteelToolsAndArmorRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInit.REINFORCED_STEEL_INGOT, 9)
                 .input(BlockInit.REINFORCED_STEEL_BLOCK)
                 .criterion(hasItem(BlockInit.REINFORCED_STEEL_BLOCK), conditionsFromItem(BlockInit.REINFORCED_STEEL_BLOCK))
-                .offerTo(exporter);
+                .offerTo(exporter, Identifier.of("steel-tools-mod", "reinforced_steel_ingot_from_block"));  // Use Identifier.of here
 
 // Shaped Recipe: 9 Reinforced Steel Ingots -> 1 Steel Block
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInit.REINFORCED_STEEL_BLOCK)

@@ -4,10 +4,22 @@
   "ingredients": [
     {
       "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:coal"
     }
   ],
   "result": {
-    "count": 5,
+    "count": 1,
     "id": "steel-tools-mod:compacted_coal"
   }
 }

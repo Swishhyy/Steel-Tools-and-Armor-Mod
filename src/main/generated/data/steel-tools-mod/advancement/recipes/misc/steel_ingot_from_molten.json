@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_compacted_coal": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:netherite_ingot"
+            "items": "steel-tools-mod:compacted_coal"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_steel_ingot": {
+    "has_molten_iron": {
       "conditions": {
         "items": [
           {
-            "items": "steel-tools-mod:steel_ingot"
+            "items": "steel-tools-mod:molten_iron"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "steel-tools-mod:reinforced_steel_ingot"
+        "recipe": "steel-tools-mod:steel_ingot_from_molten"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_steel_ingot",
-      "has_netherite_ingot"
+      "has_molten_iron",
+      "has_compacted_coal"
     ]
   ],
   "rewards": {
     "recipes": [
-      "steel-tools-mod:reinforced_steel_ingot"
+      "steel-tools-mod:steel_ingot_from_molten"
     ]
   }
 }
