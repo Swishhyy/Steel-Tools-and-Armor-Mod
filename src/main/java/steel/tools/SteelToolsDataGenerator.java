@@ -2,7 +2,6 @@ package steel.tools;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.minecraft.registry.RegistryBuilder;
 import steel.tools.data.provider.*;
 
 public class SteelToolsDataGenerator implements DataGeneratorEntrypoint {
