@@ -17,12 +17,5 @@ unless you just dont care for netherite
 
 Netherite will also recieve buffs due to this new Resource being added and itll will be more complex to make netherite armor
 
-(this will be polished more so in the future as ive stated before this is a prototype as of now)
-
 ### Road Map
-Polish Textures/Models
-Adding a further processed armor thats stronger than netherite with more complex crafting
 
-### features that may come
-Maybe Add this mod into another mod to add more content? 
-Adding in a power mechanic to further complex steel/netherite production
