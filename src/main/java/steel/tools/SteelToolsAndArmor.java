@@ -12,7 +12,7 @@ import steel.tools.init.ItemInit;
 
 public class SteelToolsAndArmor implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger( "Steel Tools");
-	public static final String MOD_ID = "steel-tools-mod"; //sets a constant for my mod_id
+	public static final String MOD_ID = "steeltoolsandarmormod"; //sets a constant for my mod_id
 
 	@Override
 	public void onInitialize() {
