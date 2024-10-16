@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "steeltoolsandarmormod:item/steel_helmet"
+  }
+}

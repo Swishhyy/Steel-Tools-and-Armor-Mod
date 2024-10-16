@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "steeltoolsandarmormod:steel_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "SSS",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "steeltoolsandarmormod:reinforced_steel_ingot"
+  }
+}
