@@ -18,4 +18,4 @@ unless you just dont care for netherite
 Netherite will also recieve buffs due to this new Resource being added and itll will be more complex to make netherite armor
 
 ### Road Map (click the link)
-https://github.com/Swishhyy/Steel-Tools-and-Armor-Mod/blob/Adding-Refinery/Foundry/roadmap.md
+[https://github.com/Swishhyy/Steel-Tools-and-Armor-Mod/blob/Adding-Refinery/Foundry/roadmap.md](https://bit.ly/4f2YW8s)
