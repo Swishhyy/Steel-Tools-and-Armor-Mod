@@ -5,10 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import steel.tools.init.ArmorMaterialInit;
-import steel.tools.init.BlockInit;
-import steel.tools.init.ItemGroupInit;
-import steel.tools.init.ItemInit;
+import steel.tools.init.*;
 
 public class SteelToolsAndArmor implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger( "Steel Tools");
@@ -23,6 +20,8 @@ public class SteelToolsAndArmor implements ModInitializer {
 		BlockInit.load();
 		ItemGroupInit.load();
 		ArmorMaterialInit.load();
+		BlockEntityInit.load();
+
 
 		LOGGER.info("Loaded!"); //lets the user know the mod is loaded
 	}
