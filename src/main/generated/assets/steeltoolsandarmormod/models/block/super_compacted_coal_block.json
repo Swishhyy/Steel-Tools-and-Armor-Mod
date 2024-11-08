@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "steeltoolsandarmormod:block/super_compacted_coal_block"
-  }
-}

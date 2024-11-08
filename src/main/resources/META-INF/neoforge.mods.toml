@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="2"
+license="MIT"
+
+[[mods]]
+modId="steeltoolsandarmormod"
+version="0.1"
+displayName="Steel Tools and Armor Mod"
+authors="Swishhyy"
+description='''A 1.21+ Neo Forge Armor/Tool Mod that further complexes end game beyond diamond gear'''
+
+[[dependencies.steeltoolsandarmormod]]
+modId="neoforge"
+type="required"
+versionRange="[1.21,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.steeltoolsandarmormod]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,)"
+ordering="NONE"
+side="BOTH"
