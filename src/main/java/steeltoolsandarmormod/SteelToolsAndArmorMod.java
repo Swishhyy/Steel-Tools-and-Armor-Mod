@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package steeltoolsandarmormod;
 
 import net.neoforged.fml.common.Mod;
 

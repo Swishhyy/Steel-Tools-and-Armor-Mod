@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package steeltoolsandarmormod;
 
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.ModConfigSpec;
