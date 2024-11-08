@@ -1,8 +1,4 @@
-# Steel Tools & Armor Fabric 1.21.1 Mod
-
-Im Converting this mod idea to NeoForge due to increased growing support and simplicity
-Also if you want to use the Fabric version thats no longer supported feel free, no license will apply to it! the Neoforge one will however, i might develop different versions in the future but now at most i can only develop a single one.
-
+# Steel Tools & Armor NeoForge 1.21+ Mod
 
 This is my first minecraft and mod in general ive ever developed its mostly just so i can see what i can make but also i think the implementation of this mod is also extremely cool 
 it will remain public if theres any issues or anything else with the mod of if someone wants to contribute
