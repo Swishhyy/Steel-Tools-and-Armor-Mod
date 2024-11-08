@@ -31,8 +31,11 @@ public class SteelToolsAndArmorENProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup registryLookup, TranslationBuilder translationBuilder) {
         //adds translation for items
         translationBuilder.add(ItemInit.COMPACTED_COAL, "Compacted Coal");
+        translationBuilder.add(ItemInit.SUPER_COMPACTED_COAL, "Super Compacted Coal");
         translationBuilder.add(ItemInit.STEEL_INGOT, "Steel Ingot");
         translationBuilder.add(ItemInit.MOLTEN_IRON, "Molten Iron");
+        translationBuilder.add(ItemInit.MOLTEN_STEEL, "Molten Steel");
+        translationBuilder.add(ItemInit.MOLTEN_NETHERITE, "Molten Netherite");
         translationBuilder.add(ItemInit.SWEET_APPLE, "Sweet Apple");
         translationBuilder.add(BlockInit.STEEL_BLOCK, "Steel Block");
         translationBuilder.add(ItemInit.STEEL_HELMET, "Steel Helmet");

@@ -1,18 +1,18 @@
 {
 	"schemaVersion": 1,
-	"id": "steel-tools-mod",
+	"id": "steeltoolsandarmormod",
 	"version": "${version}",
-	"name": "Steel tools",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Steel Tools and Armor Mod",
+	"description": "A Armor/Tool Mod that further complexes end game beyond diamond gear",
 	"authors": [
-		"Me!"
+		"Swishhyy"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Swishhyy",
+		"sources": "https://github.com/Swishhyy/Steel-Tools-and-Armor-Mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/steel-tools-mod/icon.png",
+	"icon": "assets/steeltoolsandarmormod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,9 +26,9 @@
 		]
 	},
 	"mixins": [
-		"steel-tools-mod.mixins.json",
+		"steeltoolsandarmormod.mixins.json",
 		{
-			"config": "steel-tools-mod.client.mixins.json",
+			"config": "steeltoolsandarmormod.client.mixins.json",
 			"environment": "client"
 		}
 	],

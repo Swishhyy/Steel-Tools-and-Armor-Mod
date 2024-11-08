@@ -9,6 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import steel.tools.SteelToolsAndArmor;
+import steel.tools.block.custom.FoundryBlock;
+import steel.tools.block.custom.RefineryBlock;
 
 public class BlockInit {
 
@@ -16,6 +18,18 @@ public class BlockInit {
     public static final Block STEEL_BLOCK = registerWithItem("steel_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(10.0f, 600.0f)  // Hardness of 10, Resistance of 600
+                    .requiresTool()            // Requires a tool to be mined
+                    .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
+
+    public static final Block FOUNDRY = registerWithItem("foundry",
+            new FoundryBlock(AbstractBlock.Settings.create()
+                    .strength(7.0f, 150.0f)  // Hardness of 10, Resistance of 600
+                    .requiresTool()            // Requires a tool to be mined
+                    .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
+
+    public static final Block REFINERY = registerWithItem("refinery",
+            new RefineryBlock(AbstractBlock.Settings.create()
+                    .strength(7.0f, 150.0f)  // Hardness of 10, Resistance of 600
                     .requiresTool()            // Requires a tool to be mined
                     .sounds(BlockSoundGroup.METAL))); // Use metal block sounds
 

@@ -1,0 +1,5 @@
+// 1.21.1	2024-10-16T15:38:53.0671977	Steel Tools and Armor Mod/Tags for minecraft:block
+429ce1a2f7f2ec8a0a8b09d448f210fe85549ec6 data\minecraft\tags\block\mineable\pickaxe.json
+429ce1a2f7f2ec8a0a8b09d448f210fe85549ec6 data\steeltoolsandarmormod\tags\block\steel.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\steeltoolsandarmormod\tags\block\incorrect_for_steel_tool.json
+429ce1a2f7f2ec8a0a8b09d448f210fe85549ec6 data\minecraft\tags\block\needs_diamond_tool.json

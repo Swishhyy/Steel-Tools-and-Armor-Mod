@@ -7,7 +7,6 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import steel.tools.init.ItemInit;
-import steel.tools.list.TagList;
 
 import java.util.concurrent.CompletableFuture;
 
